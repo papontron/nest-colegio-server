@@ -1,6 +1,6 @@
 import { BadRequestException, NestMiddleware, UnauthorizedException } from '@nestjs/common';
 import { GetNivelYearFromHeader } from '../util/headerExtractor';
-import { assert } from '../util/asserts';
+import { assert } from '../util/assert';
 import { signToken, verifyToken } from '../util/jwt';
 import { UserService } from '../modules/User/user.service';
 

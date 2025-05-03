@@ -4,6 +4,8 @@ import { map, Observable } from 'rxjs';
 /*
  *this interceptor is meant to set token header after the registration
  *process is done successfuly, a token must be returned by the controller
+ ALSO: THIS process is not meant to be used to refresh the token, since that 
+ job is done by the verify credenctials middleware
  */
 
 export class SetTokenHeader implements NestInterceptor {

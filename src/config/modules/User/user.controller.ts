@@ -3,7 +3,7 @@ import { UserService } from './user.service';
 import { RegisterDto } from './dto/RegisterDto';
 import { hashPassword } from '../../util/crypto';
 import { signToken } from '../../util/jwt';
-import { SetTokenHeader } from '../../interceptor/setTokenHeader.interceptor';
+import { SetTokenHeader } from '../../interceptor/SetTokenHeader.interceptor';
 
 @Controller('user')
 export class UserController {

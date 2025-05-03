@@ -1,6 +1,6 @@
 import { NestMiddleware } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { assert } from '../util/asserts';
+import { assert } from '../util/assert';
 
 export class Cors implements NestMiddleware {
   constructor(private config: ConfigService) {}

@@ -1,7 +1,7 @@
 import { BadRequestException } from '@nestjs/common';
 import { assert } from 'console';
 import { Request } from 'express';
-import { assertNivel, assertYear } from './asserts';
+import { assertNivel, assertYear } from './assert';
 export function GetNivelYearFromHeader(request: Request): {
   nivel: Nivel;
   year: Year;

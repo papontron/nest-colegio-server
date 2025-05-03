@@ -7,6 +7,7 @@ import { Cors } from './config/middleware/Cors.middleware';
 import { UserModule } from './config/modules/User/user.module';
 import { ExtractNivelYearFromHeaders, VerifyCredentials } from './config/middleware/VerifyCredentials.middleware';
 import { UserService } from './config/modules/User/user.service';
+import { AlumnoModule } from './config/modules/Alumno/Alumno.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { UserService } from './config/modules/User/user.service';
     }),
     MongoDBModule,
     UserModule,
+    AlumnoModule,
   ],
   controllers: [AppController],
   providers: [AppService, VerifyCredentials],
